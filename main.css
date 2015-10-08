@@ -1,28 +1,31 @@
 .octodex {
-  margin-top: 10px;
-  margin-left: 50, 50, 50, 100;
-  height: 300px;
+  /*Apparently this is not needed but could be useful if you were putting in a background color*/
+  /*margin: 50, 50, 50, 50;
+  /*height: 500px;*/
+  /*width: 97%;
+  background-color: #dff3dd;*/
 }
+/*This will put the octocat photos inline and only take 1/3 of the page
+Also adds in the padding for the spacing between the images*/
 .octocat {
   display: inline-block;
   width: 30%;
   padding-right: 10px;
   padding-left: 10px;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  /*This is commented out but can be used in tandem with the octodex background color*/
 }
 .octocat > a img{
+  /*Creates the grey border around the octocat images, allows photos to take entire width (30%) set
+  above which will auto the height*/
   width: 100%;
   border: 1px solid #b2b2b2;
   border-radius: 3px;
-
-}
-.octocat a::before{
-  /*width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #b2b2b2;*/
+  background-color: white;
 }
 .image-footer{
+  /*Creates the grey line at bottom of footer, also sets height of */
   /*border: 3px solid pink;*/
   height: 35px;
   padding-right: 15px;
@@ -75,9 +78,14 @@ ul {
   margin-top: -10px;
 }
 .image-footer::before{
-  /*width: 0;
+  /*Here is an attempt at the little arrow below the octocat images.  But maybe could go with the .image-footer*/
+  /*content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #b2b2b2;*/
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #b2b2b2;*/
 }
